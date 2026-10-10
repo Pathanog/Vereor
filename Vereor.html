@@ -1,0 +1,1920 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>vereor — Social Media &amp; Branding Agency</title>
+  <meta name="description" content="vereor is a full service marketing and management agency. We build brand presence through strategy, identity, and content for founders who want to be remembered, not just seen.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#F7F3EB">
+  <link rel="canonical" href="https://vereor.agency/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vereor">
+  <meta property="og:title" content="vereor — Social Media &amp; Branding Agency">
+  <meta property="og:description" content="vereor is a full service marketing and management agency. We build brand presence through strategy, identity, and content for founders who want to be remembered, not just seen.">
+  <meta property="og:url" content="https://vereor.agency/">
+  <meta property="og:image" content="https://vereor.agency/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="vereor — Social Media &amp; Branding Agency">
+  <meta name="twitter:description" content="vereor is a full service marketing and management agency. We build brand presence through strategy, identity, and content for founders who want to be remembered, not just seen.">
+  <meta name="twitter:image" content="https://vereor.agency/logo.png">
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "vereor",
+    "description": "vereor is a full service marketing and management agency. We build brand presence through strategy, identity, and content for founders who want to be remembered, not just seen.",
+    "url": "https://vereor.agency/",
+    "logo": "https://vereor.agency/logo.png",
+    "email": "contact.vereor@gmail.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Samad Pathan"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Bangalore"
+      },
+      {
+        "@type": "Country",
+        "name": "India"
+      }
+    ],
+    "sameAs": [
+      "https://instagram.com/vereorco",
+      "https://www.linkedin.com/company/vereor"
+    ]
+  }
+  </script>
+
+  <!-- Typography: Editorial Serif (Fraunces), Clean Sans (DM Sans), Monogram (Marcellus) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Marcellus&display=swap">
+
+  <style>
+    /* ==========================================================================
+       VEREOR DESIGN SYSTEM — PREMIUM EDITORIAL AGENCY AESTHETIC
+       ========================================================================== */
+    :root {
+      --cream: #F7F3EB;
+      --paper: #EFE9DC;
+      --paper-2: #E5DDCB;
+      --ink: #17171C;
+      --ink-soft: #2B2A27;
+      --muted: #6E6C65;
+      --line: #E1D9C8;
+      --line-dark: rgba(247, 243, 235, 0.12);
+      --blue: #245BFF;
+      --yellow: #FFB81C;
+      --display: 'Fraunces', Georgia, serif;
+      --body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --mark: 'Marcellus', Georgia, serif;
+      --wrap: 1240px;
+      --gut: clamp(20px, 4vw, 56px);
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 28px;
+      --radius-xl: 36px;
+      --radius-full: 9999px;
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --duration-fast: 0.22s;
+      --duration-med: 0.45s;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    body {
+      margin: 0; padding: 0;
+      background-color: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 17.5px;
+      font-weight: 400;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; transition: color var(--duration-fast) ease, opacity var(--duration-fast) ease; }
+    p { margin: 0 0 1.25em; }
+    p:last-child { margin-bottom: 0; }
+    h1, h2, h3, h4 {
+      font-family: var(--display);
+      font-weight: 400;
+      line-height: 1.1;
+      margin: 0;
+      letter-spacing: -0.022em;
+    }
+
+    .wrap {
+      max-width: var(--wrap);
+      margin-inline: auto;
+      padding-inline: var(--gut);
+      width: 100%;
+    }
+
+    /* Accessibility Skip Link */
+    .skip {
+      position: absolute; left: 16px; top: -80px;
+      background: var(--ink); color: #fff !important;
+      padding: 12px 24px; border-radius: var(--radius-full);
+      z-index: 1000; font-weight: 700; font-size: 14px;
+      transition: top 0.2s ease;
+    }
+    .skip:focus { top: 16px; outline: 3px solid var(--blue); }
+
+    /* Anchor Target Offset Helper */
+    .anchor-target {
+      display: block;
+      position: relative;
+      top: calc(-84px - env(safe-area-inset-top, 0px));
+      visibility: hidden;
+      height: 0;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      background-color: var(--ink); color: #fff !important;
+      padding: 13px 28px; min-height: 48px; border-radius: var(--radius-full);
+      font-family: var(--body); font-weight: 600; font-size: 14.5px;
+      letter-spacing: 0.01em; line-height: 1; border: 1.5px solid var(--ink);
+      cursor: pointer; transition: all var(--duration-fast) var(--ease);
+      white-space: nowrap;
+    }
+    .btn:hover {
+      background-color: var(--blue); border-color: var(--blue);
+      transform: translateY(-2px); box-shadow: 0 10px 24px -6px rgba(36, 91, 255, 0.35);
+    }
+    .btn.ghost {
+      background-color: transparent; color: var(--ink) !important;
+      border-color: rgba(23, 23, 28, 0.25);
+    }
+    .btn.ghost:hover {
+      background-color: var(--ink); color: #fff !important;
+      border-color: var(--ink);
+    }
+    .btn.light {
+      background-color: #fff; color: var(--ink) !important;
+      border-color: #fff;
+    }
+    .btn.light:hover {
+      background-color: var(--yellow); border-color: var(--yellow);
+      color: var(--ink) !important;
+    }
+    .btn.outline-light {
+      background-color: transparent; color: #fff !important;
+      border-color: rgba(255, 255, 255, 0.35);
+    }
+    .btn.outline-light:hover {
+      background-color: rgba(255, 255, 255, 0.15); border-color: #fff;
+    }
+
+    /* Studio Eyebrows */
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 12px; font-weight: 700; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--blue); line-height: 1.2;
+    }
+    .eyebrow::before {
+      content: ""; width: 5px; height: 5px; border-radius: 99px;
+      background: var(--blue);
+    }
+
+    /* Section Foundations */
+    .sec {
+      padding-block: clamp(80px, 9.5vw, 140px);
+      scroll-margin-top: calc(84px + env(safe-area-inset-top, 0px));
+    }
+    .sec-head {
+      display: flex; flex-direction: column; gap: 18px;
+      margin-bottom: clamp(44px, 6vw, 76px); max-width: 860px;
+    }
+    .sec-head h2 {
+      font-size: clamp(34px, 4.4vw, 62px);
+      line-height: 1.1;
+    }
+    .sec-head .lead {
+      font-size: clamp(18px, 1.8vw, 22px);
+      line-height: 1.6; color: var(--muted);
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION (RESTORED LOGO & MINIMAL DESIGN)
+       ========================================================================== */
+    header.top {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(247, 243, 235, 0.94);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(225, 217, 200, 0.8);
+      transition: background-color 0.2s ease;
+    }
+    .bar {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 78px; gap: 24px;
+    }
+    .brand {
+      display: inline-flex; align-items: center; gap: 12px;
+      text-decoration: none;
+    }
+    .brand-logo-img {
+      width: 34px; height: 34px; border-radius: 8px;
+      object-fit: cover; display: block;
+      box-shadow: 0 4px 12px -2px rgba(36, 91, 255, 0.25);
+    }
+    .brand-name {
+      font-family: var(--display);
+      font-size: 26px; font-weight: 600;
+      letter-spacing: -0.025em; color: var(--ink);
+      line-height: 1;
+    }
+    .brand-dot {
+      color: var(--blue);
+    }
+    .nav-links {
+      display: flex; align-items: center; gap: 32px;
+    }
+    .nav-links a {
+      font-size: 14.5px; font-weight: 500; color: var(--muted);
+      position: relative; padding-block: 6px;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-links a::after {
+      content: ""; position: absolute; bottom: 0; left: 0; right: 0;
+      height: 1.5px; background: var(--blue); transform: scaleX(0);
+      transform-origin: right; transition: transform 0.25s var(--ease);
+    }
+    .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
+
+    /* Mobile Hamburger */
+    .menu-toggle {
+      display: none; background: none; border: none; padding: 10px;
+      cursor: pointer; color: var(--ink);
+    }
+    .menu-toggle svg { display: block; }
+    .mobile-drawer {
+      display: none; position: fixed; inset: 78px 0 0 0;
+      background: var(--cream); z-index: 95; padding: 36px var(--gut);
+      flex-direction: column; gap: 20px; overflow-y: auto;
+      border-top: 1px solid var(--line);
+    }
+    .mobile-drawer.open { display: flex; }
+    .mobile-drawer a {
+      font-size: 20px; font-family: var(--display);
+      padding-block: 10px; border-bottom: 1px solid var(--line);
+    }
+
+    /* ==========================================================================
+       RIGHT-SIDE VERTICAL SCROLL NAVIGATION (RESTORED ORIGINAL)
+       ========================================================================== */
+    .side-nav {
+      position: fixed;
+      right: clamp(16px, 3.2vw, 42px);
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 90;
+      display: flex;
+      flex-direction: column;
+      pointer-events: none;
+    }
+    .side-nav-inner {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      pointer-events: auto;
+    }
+    .side-nav-line {
+      position: absolute;
+      right: 4px;
+      top: 12px;
+      bottom: 12px;
+      width: 1px;
+      background: rgba(23, 23, 28, 0.16);
+      z-index: 1;
+    }
+    .side-nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      z-index: 2;
+    }
+    .side-nav-item {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .side-nav-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 14px;
+      text-decoration: none;
+      padding: 4px 0;
+      color: var(--muted);
+      font-family: var(--body);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      transition: color 0.2s ease;
+      white-space: nowrap;
+    }
+    .side-nav-label {
+      opacity: 0.65;
+      transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+    }
+    .side-nav-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 99px;
+      background: #C4BEB1;
+      border: 1.5px solid var(--cream);
+      box-shadow: 0 0 0 1px rgba(23, 23, 28, 0.15);
+      transition: all 0.25s var(--ease);
+      flex-shrink: 0;
+    }
+    .side-nav-link:hover {
+      color: var(--ink);
+    }
+    .side-nav-link:hover .side-nav-label {
+      opacity: 1;
+      color: var(--ink);
+    }
+    .side-nav-link:hover .side-nav-dot {
+      background: var(--ink);
+      transform: scale(1.2);
+    }
+    .side-nav-link.active {
+      color: var(--ink);
+      font-weight: 700;
+    }
+    .side-nav-link.active .side-nav-label {
+      opacity: 1;
+      color: var(--ink);
+      font-weight: 700;
+    }
+    .side-nav-link.active .side-nav-dot {
+      background: var(--blue);
+      box-shadow: 0 0 0 3px rgba(36, 91, 255, 0.25);
+      transform: scale(1.35);
+    }
+
+    @media (max-width: 1120px) {
+      .side-nav {
+        display: none !important;
+      }
+    }
+
+    /* ==========================================================================
+       HOMEPAGE HERO (EDITORIAL SCALE, CONFIDENT & MINIMAL)
+       ========================================================================== */
+    .hero {
+      padding-top: clamp(56px, 7vw, 96px);
+      padding-bottom: clamp(60px, 8vw, 100px);
+      scroll-margin-top: calc(84px + env(safe-area-inset-top, 0px));
+    }
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      max-width: 980px;
+      margin-bottom: clamp(48px, 6vw, 76px);
+    }
+    .hero-title {
+      font-family: var(--display);
+      font-size: clamp(52px, 7.8vw, 104px);
+      line-height: 1.02;
+      letter-spacing: -0.035em;
+      font-weight: 400;
+      color: var(--ink);
+    }
+    .hero-accent {
+      color: var(--blue);
+      font-style: italic;
+    }
+    .hero-subhead {
+      font-size: clamp(20px, 2.2vw, 26px);
+      color: var(--ink-soft);
+      font-weight: 500;
+      line-height: 1.35;
+      margin: 0;
+    }
+    .hero-lead {
+      font-size: clamp(17px, 1.6vw, 20px);
+      line-height: 1.65;
+      color: var(--muted);
+      max-width: 40em;
+      margin: 0;
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    /* Hero Editorial Studio Showcase */
+    .hero-visual {
+      position: relative;
+      width: 100%;
+    }
+    .hero-img-frame {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      background: var(--paper);
+      box-shadow: 0 24px 64px -16px rgba(23, 23, 28, 0.12);
+      border: 1px solid var(--line);
+    }
+    .hero-img-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s var(--ease);
+    }
+    .hero-visual:hover .hero-img-frame img {
+      transform: scale(1.02);
+    }
+    .hero-caption {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 6px 0;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+    .hero-caption span:first-child {
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 12px;
+    }
+
+    /* ==========================================================================
+       TRUST STRIP / CAPABILITY RUNNER
+       ========================================================================== */
+    .trust-strip {
+      border-block: 1px solid var(--line);
+      padding-block: 22px;
+      background: rgba(239, 233, 220, 0.45);
+    }
+    .trust-flex {
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      align-items: center; gap: 18px;
+      font-size: 12.5px; font-weight: 700; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .trust-flex span { display: inline-flex; align-items: center; gap: 10px; }
+    .trust-flex span::after {
+      content: ""; width: 4px; height: 4px; border-radius: 99px;
+      background: var(--blue);
+    }
+    .trust-flex span:last-child::after { display: none; }
+
+    /* ==========================================================================
+       PHILOSOPHY BRIDGE (PRESERVED SECTION 7 STATEMENT TRANSITION)
+       ========================================================================== */
+    .bridge-sec {
+      padding-block: clamp(64px, 8vw, 108px) 0;
+    }
+    .bridge-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      padding: clamp(44px, 6.5vw, 80px);
+      text-align: center;
+      max-width: 1040px;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 22px;
+      box-shadow: 0 16px 48px -12px rgba(23, 23, 28, 0.06);
+    }
+    .bridge-title {
+      font-size: clamp(32px, 4.2vw, 56px);
+      line-height: 1.15;
+      color: var(--ink);
+      max-width: 18em;
+      margin: 0;
+    }
+    .bridge-desc {
+      font-size: clamp(17px, 1.8vw, 21px);
+      line-height: 1.6;
+      color: var(--muted);
+      max-width: 32em;
+      margin: 0;
+    }
+
+    /* ==========================================================================
+       01 / WHAT WE DO (SERVICES & CAPABILITIES)
+       ========================================================================== */
+    .services-stack {
+      display: flex; flex-direction: column;
+      gap: clamp(24px, 3vw, 36px);
+    }
+    .service-row {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: clamp(28px, 4vw, 56px);
+      align-items: center;
+      background: var(--paper);
+      border-radius: var(--radius-lg);
+      padding: clamp(28px, 4vw, 48px);
+      border: 1px solid var(--line);
+      transition: transform var(--duration-fast) var(--ease),
+                  box-shadow var(--duration-fast) var(--ease),
+                  border-color var(--duration-fast) ease;
+    }
+    .service-row:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 48px -12px rgba(23, 23, 28, 0.08);
+      border-color: rgba(36, 91, 255, 0.3);
+    }
+    .service-row:nth-child(even) {
+      grid-template-columns: 1.15fr 0.85fr;
+    }
+    .service-row:nth-child(even) .service-media {
+      order: 2;
+    }
+    .service-media {
+      border-radius: var(--radius-md); overflow: hidden;
+      aspect-ratio: 16 / 11; background: var(--paper-2);
+      border: 1px solid var(--line);
+    }
+    .service-media img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.7s var(--ease);
+    }
+    .service-row:hover .service-media img { transform: scale(1.04); }
+    .service-content {
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .service-num {
+      font-size: 13px; font-weight: 700; letter-spacing: 0.18em;
+      color: var(--blue);
+    }
+    .service-content h3 {
+      font-size: clamp(26px, 2.6vw, 36px);
+      line-height: 1.15;
+    }
+    .service-content p {
+      font-size: 16.5px; line-height: 1.65; color: var(--muted);
+    }
+    .service-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 14px; font-weight: 700; color: var(--blue);
+      letter-spacing: 0.04em; text-transform: uppercase; margin-top: 6px;
+    }
+    .service-link svg { transition: transform 0.2s ease; }
+    .service-link:hover svg { transform: translateX(4px); }
+
+    /* Client Categories Strip */
+    .client-cats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(18px, 2.5vw, 32px);
+      margin-top: clamp(48px, 6vw, 76px);
+      padding-top: 32px;
+      border-top: 1.5px solid var(--line);
+    }
+    .cat-box {
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .cat-box h4 {
+      font-size: 22px; color: var(--ink);
+    }
+    .cat-box p {
+      font-size: 15.5px; color: var(--muted); line-height: 1.6; margin: 0;
+    }
+
+    /* ==========================================================================
+       02 / WHO WE ARE (ABOUT & FOUNDER STORY)
+       ========================================================================== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: clamp(36px, 6vw, 84px);
+      align-items: start;
+    }
+    .about-copy {
+      display: flex; flex-direction: column; gap: 24px;
+    }
+    .about-copy p {
+      font-size: 18px; line-height: 1.7; color: var(--ink-soft);
+    }
+    .pullquote {
+      margin: 12px 0 0; padding: 28px 32px;
+      border-left: 3.5px solid var(--blue);
+      background: var(--paper);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-family: var(--display);
+      font-size: clamp(21px, 2.2vw, 28px);
+      line-height: 1.35; color: var(--ink);
+    }
+    .founder-credit {
+      display: flex; align-items: center; gap: 14px;
+      padding-top: 14px; border-top: 1px solid var(--line);
+      font-size: 15px; color: var(--muted);
+    }
+    .founder-credit strong { color: var(--ink); font-weight: 600; }
+
+    .about-visual {
+      display: flex; flex-direction: column; gap: 20px;
+    }
+    .about-frame {
+      border-radius: var(--radius-lg); overflow: hidden;
+      aspect-ratio: 1 / 1; background: var(--blue);
+      box-shadow: 0 24px 64px -16px rgba(36, 91, 255, 0.3);
+      border: 1px solid var(--line);
+    }
+    .about-frame img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.8s var(--ease);
+    }
+    .about-visual:hover .about-frame img { transform: scale(1.03); }
+    .about-caption {
+      font-size: 14px; color: var(--muted); line-height: 1.5;
+    }
+
+    /* Studio Pillars Strip */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(20px, 3vw, 36px);
+      margin-top: clamp(48px, 6vw, 76px);
+      padding-top: 24px;
+    }
+    .pillar-card {
+      border-top: 1.5px solid var(--ink);
+      padding-top: 24px;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .pillar-card h3 {
+      font-size: clamp(22px, 2vw, 26px);
+      color: var(--ink);
+    }
+    .pillar-card p {
+      color: var(--muted); font-size: 16px; line-height: 1.6;
+    }
+
+    /* Qualify Box */
+    .qualify-box {
+      margin-top: clamp(44px, 5.5vw, 68px);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: clamp(28px, 4vw, 44px);
+    }
+    .qualify-box h3 {
+      font-size: clamp(21px, 2vw, 25px);
+      margin-bottom: 24px;
+    }
+    .qualify-list {
+      list-style: none; padding: 0; margin: 0;
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .qualify-list li {
+      display: flex; align-items: flex-start; gap: 16px;
+      font-size: 16px; line-height: 1.55; color: var(--ink-soft);
+    }
+    .qualify-list li span {
+      width: 28px; height: 28px; border-radius: 99px;
+      background: var(--blue); color: #fff;
+      display: grid; place-items: center;
+      font-size: 13px; font-weight: 700;
+      flex-shrink: 0; margin-top: 1px;
+    }
+
+    /* ==========================================================================
+       03 / WHAT WE FOCUS ON
+       ========================================================================== */
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: clamp(18px, 2.5vw, 28px);
+    }
+    .focus-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: clamp(28px, 3vw, 36px);
+      display: flex; flex-direction: column; gap: 14px;
+      transition: transform var(--duration-fast) var(--ease), border-color var(--duration-fast) ease;
+    }
+    .focus-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(36, 91, 255, 0.3);
+    }
+    .focus-num {
+      font-family: var(--display);
+      font-size: 32px; color: var(--blue);
+      line-height: 1;
+    }
+    .focus-card h3 {
+      font-size: clamp(20px, 1.8vw, 24px);
+      color: var(--ink);
+    }
+    .focus-card p {
+      font-size: 15.5px; color: var(--muted);
+      line-height: 1.6; margin: 0;
+    }
+
+    /* ==========================================================================
+       04 / HOW WE CREATE
+       ========================================================================== */
+    .create-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: clamp(16px, 2vw, 24px);
+    }
+    .create-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: clamp(24px, 2.5vw, 32px);
+      display: flex; flex-direction: column; gap: 12px;
+      transition: transform var(--duration-fast) var(--ease);
+    }
+    .create-card:hover { transform: translateY(-3px); }
+    .create-num {
+      font-family: var(--display);
+      font-size: 32px; color: var(--blue);
+      line-height: 1;
+    }
+    .create-card h3 {
+      font-size: clamp(19px, 1.7vw, 23px);
+    }
+    .create-card p {
+      font-size: 15px; color: var(--muted);
+      line-height: 1.6; margin: 0;
+    }
+
+    /* ==========================================================================
+       05 / HOW WE WORK (PROCESS & WORKFLOW)
+       ========================================================================== */
+    .workflow-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(20px, 3vw, 32px);
+      margin-bottom: clamp(48px, 6vw, 72px);
+    }
+    .workflow-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: clamp(28px, 3vw, 40px);
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .workflow-badge {
+      display: inline-block; align-self: flex-start;
+      padding: 4px 12px; background: rgba(36, 91, 255, 0.1);
+      color: var(--blue); border-radius: 99px;
+      font-size: 11.5px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .workflow-card h3 {
+      font-size: clamp(22px, 2vw, 26px);
+    }
+    .workflow-card p {
+      font-size: 15.5px; color: var(--muted);
+      line-height: 1.6; margin: 0;
+    }
+
+    /* Integrated Teams Model */
+    .teams-container {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: clamp(32px, 4.5vw, 56px);
+    }
+    .teams-head {
+      display: flex; flex-direction: column; gap: 10px;
+      margin-bottom: 32px;
+    }
+    .teams-head h3 {
+      font-size: clamp(26px, 2.6vw, 36px);
+    }
+    .teams-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(24px, 4vw, 48px);
+    }
+    .team-col {
+      display: flex; flex-direction: column; gap: 20px;
+    }
+    .team-header h4 {
+      font-size: 24px; margin-top: 6px; margin-bottom: 8px;
+    }
+    .team-header p {
+      color: var(--muted); font-size: 15.5px; margin: 0;
+    }
+    .team-tag {
+      font-size: 11.5px; font-weight: 700;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--blue);
+    }
+    .team-tags {
+      list-style: none; padding: 0; margin: 0;
+      display: flex; flex-wrap: wrap; gap: 10px;
+    }
+    .team-tags li {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      padding: 8px 16px; border-radius: 99px;
+      font-size: 13.5px; font-weight: 600; color: var(--ink-soft);
+    }
+
+    /* ==========================================================================
+       06 / WHAT WE BELIEVE (BELIEFS, PARTNERSHIPS & TRANSFORMATION)
+       ========================================================================== */
+    .beliefs-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: clamp(18px, 2.5vw, 28px);
+      margin-bottom: clamp(56px, 7vw, 92px);
+    }
+    .belief-card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: clamp(26px, 3vw, 36px);
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .belief-num {
+      font-family: var(--display);
+      font-size: 32px; color: var(--blue);
+    }
+    .belief-card h3 {
+      font-size: clamp(20px, 1.8vw, 24px);
+    }
+    .belief-card p {
+      font-size: 15.5px; color: var(--muted);
+      line-height: 1.6; margin: 0;
+    }
+
+    /* Audiences / Who We Work With */
+    .audiences-wrapper {
+      margin-bottom: clamp(56px, 7vw, 88px);
+    }
+    .audiences-intro {
+      display: flex; flex-direction: column; gap: 14px;
+      margin-bottom: clamp(32px, 4vw, 48px);
+      max-width: 800px;
+    }
+    .audiences-intro h3 {
+      font-size: clamp(28px, 3vw, 42px);
+    }
+    .audiences-intro p {
+      font-size: 17px; color: var(--muted); margin: 0;
+    }
+    .audiences-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(18px, 2vw, 28px);
+    }
+    .audience-card {
+      background: var(--paper); border-radius: var(--radius-md);
+      padding: clamp(24px, 3vw, 36px);
+      border: 1px solid var(--line);
+      display: flex; flex-direction: column; gap: 12px;
+      transition: transform var(--duration-fast) var(--ease);
+    }
+    .audience-card:hover { transform: translateY(-3px); }
+    .audience-card h3 {
+      font-size: clamp(20px, 1.8vw, 24px);
+    }
+    .audience-card p {
+      font-size: 15.5px; color: var(--muted); line-height: 1.6; margin: 0;
+    }
+
+    /* Before vs After Callout */
+    .ba-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: clamp(20px, 3vw, 36px);
+    }
+    .ba-card {
+      border-radius: var(--radius-lg); padding: clamp(32px, 4.5vw, 56px);
+      display: flex; flex-direction: column; gap: 18px;
+    }
+    .ba-card.before {
+      background: var(--paper); border: 1px solid var(--line);
+    }
+    .ba-card.after {
+      background: var(--blue); color: #fff;
+      box-shadow: 0 24px 60px -16px rgba(36, 91, 255, 0.4);
+    }
+    .ba-card .eyebrow {
+      color: inherit; opacity: 0.85;
+    }
+    .ba-card.after .eyebrow { color: var(--yellow); opacity: 1; }
+    .ba-card h4 {
+      font-size: clamp(24px, 2.6vw, 36px);
+      line-height: 1.15;
+    }
+    .ba-card.before p { color: var(--muted); font-size: 16.5px; line-height: 1.6; margin: 0; }
+    .ba-card.after p { color: rgba(255, 255, 255, 0.88); font-size: 16.5px; line-height: 1.6; margin: 0; }
+
+    /* ==========================================================================
+       CLOSING CALL TO ACTION (PRESERVED & ELEVATED)
+       ========================================================================== */
+    .contact-sec {
+      padding-block: 0 clamp(48px, 6vw, 80px);
+    }
+    .contact-card {
+      background: var(--blue); color: var(--cream);
+      border-radius: var(--radius-xl);
+      padding: clamp(40px, 6.5vw, 88px);
+      display: flex; flex-direction: column; gap: 30px;
+      position: relative; overflow: hidden;
+      box-shadow: 0 24px 64px -16px rgba(36, 91, 255, 0.45);
+    }
+    .contact-card .eyebrow { color: var(--yellow); }
+    .contact-card .eyebrow::before { background: var(--yellow); }
+    .contact-card h2 {
+      font-size: clamp(36px, 5.5vw, 76px);
+      line-height: 1.05; max-width: 14em;
+    }
+    .contact-card .sub {
+      font-size: clamp(20px, 2.2vw, 25px);
+      color: rgba(247, 243, 235, 0.9); line-height: 1.5;
+    }
+    .contact-actions {
+      display: flex; flex-wrap: wrap; gap: 14px;
+      align-items: center; margin-top: 6px;
+    }
+    #copied {
+      font-size: 14.5px; font-weight: 700; color: var(--yellow);
+      min-height: 1.4em; letter-spacing: 0.02em; transition: opacity 0.2s ease;
+    }
+    .contact-reach {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px; border-top: 1.5px solid rgba(255, 255, 255, 0.22);
+      padding-top: 30px; margin-top: 10px;
+    }
+    .contact-reach div { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+    .contact-reach small {
+      font-size: 12px; font-weight: 700; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--yellow);
+    }
+    .contact-reach .val {
+      font-size: clamp(19px, 2.2vw, 28px);
+      font-weight: 600; overflow-wrap: anywhere; color: var(--cream);
+    }
+    .contact-reach a.val {
+      text-decoration: underline; text-underline-offset: 6px;
+    }
+
+    /* ==========================================================================
+       LARGE EDITORIAL FOOTER (RESTORED LOGO & METRICS)
+       ========================================================================== */
+    footer.editorial-footer {
+      background: var(--ink); color: var(--cream);
+      padding-top: clamp(72px, 9vw, 112px);
+      padding-bottom: 32px;
+      position: relative; overflow: hidden;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 1fr 1fr;
+      gap: clamp(36px, 6vw, 84px);
+      padding-bottom: clamp(64px, 8vw, 96px);
+      border-bottom: 1px solid rgba(247, 243, 235, 0.12);
+      position: relative; z-index: 2;
+    }
+    .footer-col h3 {
+      font-size: 13px; font-weight: 700; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--yellow);
+      margin-bottom: 24px; font-family: var(--body);
+    }
+    .footer-col p {
+      color: rgba(247, 243, 235, 0.72);
+      font-size: 15.5px; line-height: 1.65; max-width: 25em;
+    }
+    .footer-brand {
+      display: inline-flex; align-items: center; gap: 12px;
+      margin-bottom: 18px; text-decoration: none;
+    }
+    .footer-logo-img {
+      width: 36px; height: 36px; border-radius: 8px;
+      object-fit: cover; display: block;
+    }
+    .footer-socials { display: flex; gap: 14px; margin-top: 24px; }
+    .footer-social-btn {
+      width: 44px; height: 44px; border-radius: 99px;
+      background: rgba(247, 243, 235, 0.08);
+      border: 1px solid rgba(247, 243, 235, 0.14);
+      display: grid; place-items: center;
+      color: var(--cream); transition: all 0.2s ease;
+    }
+    .footer-social-btn:hover {
+      background: var(--blue); border-color: var(--blue);
+      transform: translateY(-2px);
+    }
+    .footer-links { list-style: none; padding: 0; margin: 0; }
+    .footer-links li { margin-bottom: 14px; }
+    .footer-links a {
+      color: rgba(247, 243, 235, 0.76);
+      font-size: 15.5px; transition: color 0.2s ease;
+    }
+    .footer-links a:hover { color: #fff; text-decoration: underline; }
+    .footer-contact-info p {
+      margin-bottom: 10px; font-size: 15px;
+      color: rgba(247, 243, 235, 0.72);
+    }
+    .footer-contact-info a { color: var(--cream); text-decoration: underline; }
+
+    /* Oversized Brand Typography */
+    .footer-giant-wordmark {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: clamp(96px, 17vw, 240px);
+      line-height: 0.85;
+      letter-spacing: -0.04em;
+      color: rgba(247, 243, 235, 0.06);
+      text-align: center;
+      padding-top: clamp(24px, 4vw, 48px);
+      padding-bottom: 12px;
+      user-select: none;
+      pointer-events: none;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    /* Copyright Bar */
+    .footer-bottom {
+      display: flex; flex-wrap: wrap; align-items: center;
+      justify-content: space-between; gap: 16px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(247, 243, 235, 0.08);
+      font-size: 14px; color: rgba(247, 243, 235, 0.55);
+      position: relative; z-index: 2;
+    }
+    .back-to-top {
+      color: rgba(247, 243, 235, 0.7); font-weight: 600;
+      display: inline-flex; align-items: center; gap: 6px;
+    }
+    .back-to-top:hover { color: #fff; }
+
+    /* ==========================================================================
+       SCROLL ANIMATIONS & RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    .reveal {
+      opacity: 0; transform: translateY(22px);
+      transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
+    }
+    .reveal.in {
+      opacity: 1; transform: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition-duration: 0.001ms !important;
+      }
+      .reveal { opacity: 1 !important; transform: none !important; }
+    }
+
+    @media (max-width: 1040px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .about-visual { max-width: 540px; }
+      .focus-grid { grid-template-columns: repeat(2, 1fr); }
+      .create-grid { grid-template-columns: repeat(2, 1fr); }
+      .workflow-grid { grid-template-columns: 1fr; }
+      .teams-grid { grid-template-columns: 1fr; }
+      .beliefs-grid { grid-template-columns: repeat(2, 1fr); }
+      .audiences-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 860px) {
+      .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+      .nav-links { display: none; }
+      .menu-toggle { display: block; }
+      .service-row, .service-row:nth-child(even) {
+        grid-template-columns: 1fr;
+      }
+      .service-row:nth-child(even) .service-media { order: 0; }
+      .pillars-grid { grid-template-columns: 1fr; }
+      .client-cats { grid-template-columns: 1fr; }
+      .audiences-grid { grid-template-columns: 1fr; }
+      .ba-grid { grid-template-columns: 1fr; }
+      .focus-grid { grid-template-columns: 1fr; }
+      .create-grid { grid-template-columns: 1fr; }
+      .beliefs-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 540px) {
+      .focus-grid { grid-template-columns: 1fr; }
+      .create-grid { grid-template-columns: 1fr; }
+      .audiences-grid { grid-template-columns: 1fr; }
+      .hero-caption { flex-direction: column; align-items: flex-start; gap: 4px; }
+    }
+  </style>
+</head>
+<body id="top">
+
+  <a class="skip" href="#content">Skip to content</a>
+
+  <!-- ==========================================================================
+       RIGHT-SIDE VERTICAL SCROLL NAVIGATION (RESTORED ORIGINAL)
+       ========================================================================== -->
+  <nav class="side-nav" aria-label="Section Navigation">
+    <div class="side-nav-inner">
+      <div class="side-nav-line"></div>
+      <ul class="side-nav-list">
+        <li class="side-nav-item">
+          <a href="#what-we-do" class="side-nav-link" data-section="what-we-do">
+            <span class="side-nav-label">01 What We Do</span>
+            <span class="side-nav-dot"></span>
+          </a>
+        </li>
+        <li class="side-nav-item">
+          <a href="#who-we-are" class="side-nav-link" data-section="who-we-are">
+            <span class="side-nav-label">02 Who We Are</span>
+            <span class="side-nav-dot"></span>
+          </a>
+        </li>
+        <li class="side-nav-item">
+          <a href="#what-we-focus-on" class="side-nav-link" data-section="what-we-focus-on">
+            <span class="side-nav-label">03 What We Focus On</span>
+            <span class="side-nav-dot"></span>
+          </a>
+        </li>
+        <li class="side-nav-item">
+          <a href="#how-we-create" class="side-nav-link" data-section="how-we-create">
+            <span class="side-nav-label">04 How We Create</span>
+            <span class="side-nav-dot"></span>
+          </a>
+        </li>
+        <li class="side-nav-item">
+          <a href="#how-we-work" class="side-nav-link" data-section="how-we-work">
+            <span class="side-nav-label">05 How We Work</span>
+            <span class="side-nav-dot"></span>
+          </a>
+        </li>
+        <li class="side-nav-item">
+          <a href="#what-we-believe" class="side-nav-link" data-section="what-we-believe">
+            <span class="side-nav-label">06 What We Believe</span>
+            <span class="side-nav-dot"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       HEADER
+       ========================================================================== -->
+  <header class="top">
+    <div class="wrap bar">
+      <a class="brand" href="/" aria-label="Vereor, home">
+        <img src="logo.png" alt="Vereor logo" class="brand-logo-img" width="34" height="34">
+        <span class="brand-name">vereor<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#what-we-do">Services</a>
+        <a href="#who-we-are">About</a>
+        <a href="#how-we-work">Process</a>
+        <a href="#what-we-believe">Beliefs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <a class="btn" href="mailto:contact.vereor@gmail.com?subject=Contact%20Vereor">Contact Us</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#what-we-do" class="drawer-link">01 What We Do</a>
+      <a href="#who-we-are" class="drawer-link">02 Who We Are</a>
+      <a href="#what-we-focus-on" class="drawer-link">03 What We Focus On</a>
+      <a href="#how-we-create" class="drawer-link">04 How We Create</a>
+      <a href="#how-we-work" class="drawer-link">05 How We Work</a>
+      <a href="#what-we-believe" class="drawer-link">06 What We Believe</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+      <a class="btn" style="margin-top: 14px;" href="mailto:contact.vereor@gmail.com?subject=Book%20a%20meeting%20with%20Vereor">Book a Meeting</a>
+    </div>
+  </header>
+
+  <main id="content">
+
+    <!-- ==========================================================================
+         HOMEPAGE HERO (RARE IDEAS EDITORIAL SCALE)
+         ========================================================================== -->
+    <section class="hero wrap" aria-label="Introduction">
+      <div class="hero-content reveal">
+        <span class="eyebrow">BRAND STRATEGY &middot; CONTENT &middot; ORGANIC GROWTH</span>
+        <h1 class="hero-title">This is your brand<br><span class="hero-accent">with Vereor.</span></h1>
+        <p class="hero-subhead">A full service marketing and brand management agency.</p>
+        <p class="hero-lead">Vereor builds the strategy first, then everything people see on top of it, so brands, artists, and ambitious businesses are clear, distinct, and remembered.</p>
+        <div class="hero-cta">
+          <a class="btn" href="mailto:contact.vereor@gmail.com?subject=Book%20a%20meeting%20with%20Vereor">Book a Meeting</a>
+          <a class="btn ghost" href="#what-we-do">See what we do</a>
+        </div>
+      </div>
+
+      <!-- Editorial Studio Photographic Showcase -->
+      <div class="hero-visual reveal">
+        <div class="hero-img-frame">
+          <img src="images/hero-agency-studio.jpg" alt="Vereor brand strategy and creative agency studio" width="1400" height="930" fetchpriority="high">
+        </div>
+        <div class="hero-caption">
+          <span>Creative Direction &middot; Strategy &middot; Identity Systems</span>
+          <span>Vereor Studio</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TRUST STRIP / CAPABILITY RUNNER
+         ========================================================================== -->
+    <div class="trust-strip">
+      <div class="wrap">
+        <div class="trust-flex" aria-label="Core Capabilities">
+          <span>Strategy Before Style</span>
+          <span>Brands, Artists and Businesses</span>
+          <span>One Voice, Every Touchpoint</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         PHILOSOPHY BRIDGE (PRESERVED SECTION 7 STATEMENT TRANSITION)
+         ========================================================================== -->
+    <section class="bridge-sec wrap reveal" aria-label="Studio Philosophy">
+      <div class="bridge-card">
+        <span class="eyebrow">OUR PHILOSOPHY</span>
+        <h2 class="bridge-title">&ldquo;Good strategy deserves to be seen.&rdquo;</h2>
+        <p class="bridge-desc">A curated selection of identity systems, content frameworks, and digital brand directions crafted for ambitious businesses and founders.</p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         01 / WHAT WE DO (SERVICES & CAPABILITIES)
+         ========================================================================== -->
+    <section class="sec wrap" id="what-we-do" aria-labelledby="h-what-we-do">
+      <span id="services" class="anchor-target"></span>
+      <div class="sec-head reveal">
+        <span class="eyebrow">01 / WHAT WE DO</span>
+        <h2 id="h-what-we-do">A strategy first, then everything people see.</h2>
+        <p class="lead">We work with brands, artists and businesses that want to be understood quickly and remembered for the right reasons. We set the direction, then build the identity and content that carry it.</p>
+      </div>
+
+      <div class="services-stack">
+        <!-- Service 01 -->
+        <article class="service-row reveal">
+          <div class="service-media">
+            <img src="images/service-strategy.jpg" alt="Brand strategy and positioning editorial notebook" width="1000" height="688" loading="lazy">
+          </div>
+          <div class="service-content">
+            <span class="service-num">01 / BRAND STRATEGY</span>
+            <h3>Brand Strategy &amp; Positioning</h3>
+            <p>Help founders clarify what their brand stands for, who it serves, and why customers should choose it. Develop brand positioning, messaging, audience direction, and strategic foundations that guide consistent communication.</p>
+            <a class="service-link" href="#contact">Discuss Strategy <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+          </div>
+        </article>
+
+        <!-- Service 02 -->
+        <article class="service-row reveal">
+          <div class="service-media">
+            <img src="images/service-identity.jpg" alt="Brand identity design systems, typography guidelines, and creative touchpoints" width="1000" height="688" loading="lazy">
+          </div>
+          <div class="service-content">
+            <span class="service-num">02 / VISUAL IDENTITY</span>
+            <h3>Brand Identity &amp; Creative Direction</h3>
+            <p>Build a recognizable visual and verbal identity through brand systems, typography, color direction, creative guidelines, and cohesive brand applications. Create a brand identity that reflects the business and remains consistent across digital touchpoints.</p>
+            <a class="service-link" href="#contact">Build Identity <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+          </div>
+        </article>
+
+        <!-- Service 03 -->
+        <article class="service-row reveal">
+          <div class="service-media">
+            <img src="images/service-social.jpg" alt="Social media marketing and management studio camera setup" width="1000" height="688" loading="lazy">
+          </div>
+          <div class="service-content">
+            <span class="service-num">03 / SOCIAL MARKETING</span>
+            <h3>Social Media Marketing &amp; Management</h3>
+            <p>Develop and manage social media presence through content planning, publishing workflows, platform-specific execution, and consistent brand communication. Support businesses looking for a social media management agency that connects everyday content with wider business objectives.</p>
+            <a class="service-link" href="#contact">Manage Presence <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+          </div>
+        </article>
+
+        <!-- Service 04 -->
+        <article class="service-row reveal">
+          <div class="service-media">
+            <img src="images/service-content.jpg" alt="Content strategy and creative video production" width="1000" height="688" loading="lazy">
+          </div>
+          <div class="service-content">
+            <span class="service-num">04 / CONTENT PRODUCTION</span>
+            <h3>Content Strategy &amp; Creative Production</h3>
+            <p>Create a strategic content direction for social media, short-form video, campaigns, and digital storytelling. Plan content around the brand's audience, message, and objectives rather than posting without a clear purpose.</p>
+            <a class="service-link" href="#contact">Plan Content <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+          </div>
+        </article>
+
+        <!-- Service 05 -->
+        <article class="service-row reveal">
+          <div class="service-media">
+            <img src="images/service-founder.jpg" alt="Founder branding and personal brand management consultation" width="1000" height="688" loading="lazy">
+          </div>
+          <div class="service-content">
+            <span class="service-num">05 / PERSONAL BRANDING</span>
+            <h3>Founder Branding &amp; Personal Brand Management</h3>
+            <p>Help founders develop a distinct professional identity through positioning, messaging, content direction, and a consistent digital presence. Build a personal brand that communicates expertise, perspective, and credibility.</p>
+            <a class="service-link" href="#contact">Elevate Founder Brand <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+          </div>
+        </article>
+
+        <!-- Service 06 -->
+        <article class="service-row reveal">
+          <div class="service-media">
+            <img src="images/service-digital.jpg" alt="Digital presence and holistic multi-touchpoint brand management" width="1000" height="688" loading="lazy">
+          </div>
+          <div class="service-content">
+            <span class="service-num">06 / BRAND MANAGEMENT</span>
+            <h3>Digital Presence &amp; Brand Management</h3>
+            <p>Bring the brand's website, social profiles, messaging, and creative direction into a cohesive system. Help early-stage businesses establish a professional digital presence that feels consistent at every customer touchpoint.</p>
+            <a class="service-link" href="#contact">Unify Your Brand <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Client Categories Strip -->
+      <div class="client-cats reveal">
+        <div class="cat-box">
+          <h4>Brands</h4>
+          <p>A clear position and one consistent voice across every digital and customer touchpoint.</p>
+        </div>
+        <div class="cat-box">
+          <h4>Artists</h4>
+          <p>A recognisable identity and a steady content rhythm, so an audience can follow the work.</p>
+        </div>
+        <div class="cat-box">
+          <h4>Businesses</h4>
+          <p>Messaging and presence that explain what you do, who you serve, and why it matters.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         02 / WHO WE ARE (ABOUT & FOUNDER STORY)
+         ========================================================================== -->
+    <section class="sec wrap" id="who-we-are" aria-labelledby="h-who-we-are">
+      <span id="about" class="anchor-target"></span>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <span class="eyebrow">02 / WHO WE ARE</span>
+          <h2 id="h-who-we-are">A brand strategy studio led by its founder.</h2>
+          <p>Vereor is a brand strategy and social media studio. A business has to be clear before it can be seen, so every project starts with who you are for and what you stand for.</p>
+          <p>Our purpose is to give brands, artists and businesses a strategy they can follow and a presence that looks and sounds like them. Founded by Samad Pathan, Vereor connects strategy, identity, and content into one consistent system, helping ambitious businesses communicate clearly, stand apart, and build lasting recognition.</p>
+          
+          <blockquote class="pullquote">
+            &ldquo;Every business has something good to offer. Without a strategy, it reaches people plain and easy to scroll past.&rdquo;
+          </blockquote>
+
+          <div class="founder-credit">
+            <strong>Samad Pathan</strong> &middot; Founder &amp; Creative Director, Vereor
+          </div>
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="about-frame">
+            <img src="images/samad-pathan.png" alt="Samad Pathan, founder and creative director of Vereor, in a black blazer against a cobalt blue background" width="1200" height="1200" loading="lazy">
+          </div>
+          <p class="about-caption"><strong>Samad Pathan</strong> &mdash; Founder &amp; Creative Director, Vereor. Sets the strategy and direction for the work.</p>
+        </div>
+      </div>
+
+      <!-- Studio Value Pillars -->
+      <div class="pillars-grid reveal">
+        <div class="pillar-card">
+          <h3>Strategy Before Style</h3>
+          <p>We clarify who you are for and what you stand for before designing a single pixel, ensuring every visual decision serves your business objectives.</p>
+        </div>
+        <div class="pillar-card">
+          <h3>One Voice, Every Touchpoint</h3>
+          <p>From social media reels and packaging to long-form editorial copy, we create one distinct, cohesive voice across all digital and physical channels.</p>
+        </div>
+        <div class="pillar-card">
+          <h3>Long-Term Organic Growth</h3>
+          <p>We favor steady, compounding brand recognition over empty viral hacks. Clear messaging creates loyal audiences that stay.</p>
+        </div>
+      </div>
+
+      <!-- Target Audience Checklist -->
+      <div class="qualify-box reveal">
+        <h3>We work with founders, artists and businesses who:</h3>
+        <ul class="qualify-list">
+          <li><span>1</span> <div><strong>See brand as a business asset</strong>, not just a logo or cosmetic layer.</div></li>
+          <li><span>2</span> <div><strong>Want clarity before creative work begins</strong>, ensuring alignment on vision and market goals.</div></li>
+          <li><span>3</span> <div><strong>Are growing or sharpening their market position</strong> in competitive categories.</div></li>
+          <li><span>4</span> <div><strong>Choose long-term difference over launch-day hype</strong>, building compounding brand equity.</div></li>
+          <li><span>5</span> <div><strong>Value precision and honest partnership</strong> with senior creative leadership.</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         03 / WHAT WE FOCUS ON
+         ========================================================================== -->
+    <section class="sec wrap" id="what-we-focus-on" aria-labelledby="h-focus">
+      <div class="sec-head reveal">
+        <span class="eyebrow">03 / WHAT WE FOCUS ON</span>
+        <h2 id="h-focus">Where we put our attention.</h2>
+        <p class="lead">Four priorities shape every plan we write.</p>
+      </div>
+
+      <div class="focus-grid reveal">
+        <div class="focus-card">
+          <span class="focus-num">01</span>
+          <h3>Content Strategy</h3>
+          <p>A plan for what to say, where to say it and how often, so every post has a purpose and communicates your core message.</p>
+        </div>
+        <div class="focus-card">
+          <span class="focus-num">02</span>
+          <h3>Brand Positioning</h3>
+          <p>A clear answer to who you are for and why they should choose you, creating unmistakable differentiation in your category.</p>
+        </div>
+        <div class="focus-card">
+          <span class="focus-num">03</span>
+          <h3>Audience Engagement</h3>
+          <p>Content that invites a response: comments, saves, shares and genuine conversations with the people who matter most.</p>
+        </div>
+        <div class="focus-card">
+          <span class="focus-num">04</span>
+          <h3>Sustainable Organic Growth</h3>
+          <p>Growth built on a recognisable brand and steady, valuable content, not on shortcuts, ephemeral trends or bought attention.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         04 / HOW WE CREATE
+         ========================================================================== -->
+    <section class="sec wrap" id="how-we-create" aria-labelledby="h-create">
+      <div class="sec-head reveal">
+        <span class="eyebrow">04 / HOW WE CREATE</span>
+        <h2 id="h-create">From research to execution, in five stages.</h2>
+        <p class="lead">Each stage feeds the next, so nothing is made before it has a reason.</p>
+      </div>
+
+      <div class="create-grid reveal">
+        <div class="create-card">
+          <span class="create-num">01</span>
+          <h3>Research</h3>
+          <p>We study the audience, the category and what others in it are saying, so the work starts from evidence.</p>
+        </div>
+        <div class="create-card">
+          <span class="create-num">02</span>
+          <h3>Ideation</h3>
+          <p>Findings become a creative direction: themes, formats and a voice worth repeating across touchpoints.</p>
+        </div>
+        <div class="create-card">
+          <span class="create-num">03</span>
+          <h3>Content</h3>
+          <p>Copy, visuals and formats are produced to the direction we agreed, ensuring narrative consistency.</p>
+        </div>
+        <div class="create-card">
+          <span class="create-num">04</span>
+          <h3>Design</h3>
+          <p>Identity and layouts that keep every piece recognisably yours across social and digital channels.</p>
+        </div>
+        <div class="create-card">
+          <span class="create-num">05</span>
+          <h3>Execution</h3>
+          <p>We publish, watch how it lands, measure response where data is available, and refine the plan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         05 / HOW WE WORK (PROCESS & WORKFLOW)
+         ========================================================================== -->
+    <section class="sec wrap" id="how-we-work" aria-labelledby="h-how-we-work">
+      <span id="process" class="anchor-target"></span>
+      <div class="sec-head reveal">
+        <span class="eyebrow">05 / HOW WE WORK</span>
+        <h2 id="h-how-we-work">Planned together, delivered on a rhythm.</h2>
+        <p class="lead">A clear workflow keeps the work moving and keeps you informed at every stage.</p>
+      </div>
+
+      <div class="workflow-grid reveal">
+        <div class="workflow-card">
+          <div class="workflow-badge">Stage 01</div>
+          <h3>Plan</h3>
+          <p>Each engagement starts with a written plan: goals, audience, content pillars and a posting calendar.</p>
+        </div>
+        <div class="workflow-card">
+          <div class="workflow-badge">Stage 02</div>
+          <h3>Collaborate</h3>
+          <p>You see work at agreed checkpoints and give feedback before anything goes live, ensuring complete alignment.</p>
+        </div>
+        <div class="workflow-card">
+          <div class="workflow-badge">Stage 03</div>
+          <h3>Deliver</h3>
+          <p>Content ships on the agreed schedule. We review results regularly and adjust the plan to compound performance.</p>
+        </div>
+      </div>
+
+      <!-- Integrated Teams Model -->
+      <div class="teams-container reveal">
+        <div class="teams-head">
+          <span class="eyebrow">INTEGRATED MODEL</span>
+          <h3>Two teams, one process.</h3>
+        </div>
+        <div class="teams-grid">
+          <div class="team-col">
+            <div class="team-header">
+              <span class="team-tag">DISCIPLINE 01</span>
+              <h4>Strategy</h4>
+              <p>A sharp, defensible position for your market and your audience.</p>
+            </div>
+            <ul class="team-tags">
+              <li>Founder Discovery</li>
+              <li>Market Research</li>
+              <li>Audience Segments</li>
+              <li>Positioning Frameworks</li>
+            </ul>
+          </div>
+          <div class="team-col">
+            <div class="team-header">
+              <span class="team-tag">DISCIPLINE 02</span>
+              <h4>Creative</h4>
+              <p>Identity and content that carry that strategy into the world.</p>
+            </div>
+            <ul class="team-tags">
+              <li>Visual Identity</li>
+              <li>Messaging &amp; Tone</li>
+              <li>Social Media Content</li>
+              <li>Brand Guidelines</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         06 / WHAT WE BELIEVE (BELIEFS, PARTNERSHIPS & TRANSFORMATION)
+         ========================================================================== -->
+    <section class="sec wrap" id="what-we-believe" aria-labelledby="h-believe">
+      <span id="partnerships" class="anchor-target"></span>
+      <div class="sec-head reveal">
+        <span class="eyebrow">06 / WHAT WE BELIEVE</span>
+        <h2 id="h-believe">Authentic, consistent and creative, with the long term in mind.</h2>
+        <p class="lead">We would rather grow a brand slowly and honestly than promise results nobody can guarantee.</p>
+      </div>
+
+      <div class="beliefs-grid reveal">
+        <div class="belief-card">
+          <span class="belief-num">01</span>
+          <h3>Authenticity</h3>
+          <p>A brand should sound like the people behind it. We don't borrow a voice or copy a trend.</p>
+        </div>
+        <div class="belief-card">
+          <span class="belief-num">02</span>
+          <h3>Consistency</h3>
+          <p>Recognition comes from showing up the same way, again and again, on every platform and touchpoint.</p>
+        </div>
+        <div class="belief-card">
+          <span class="belief-num">03</span>
+          <h3>Creativity</h3>
+          <p>Original ideas grounded in research, so the work is distinct and still makes absolute sense for the business.</p>
+        </div>
+        <div class="belief-card">
+          <span class="belief-num">04</span>
+          <h3>Long-term Growth</h3>
+          <p>Steady, organic progress over shortcuts and empty promises. We say plainly what we can and can't do.</p>
+        </div>
+      </div>
+
+      <!-- Audiences / Who Vereor Works With -->
+      <div class="audiences-wrapper reveal">
+        <div class="audiences-intro">
+          <span class="eyebrow">PARTNERSHIPS</span>
+          <h3>Built for brands ready to mean something.</h3>
+          <p>We collaborate with forward-thinking businesses and individuals who understand that reputation is built through intentional communication.</p>
+        </div>
+
+        <div class="audiences-grid">
+          <div class="audience-card">
+            <h3>Founders &amp; Startups</h3>
+            <p>Looking for a clear position, distinctive visual identity, and strategic launch plan that cuts through crowded markets.</p>
+          </div>
+          <div class="audience-card">
+            <h3>D2C &amp; Product Brands</h3>
+            <p>Seeking packaging design, elevated social content rhythms, and customer touchpoints that people genuinely remember.</p>
+          </div>
+          <div class="audience-card">
+            <h3>Artists &amp; Creators</h3>
+            <p>Translating personal craft into an unmistakable identity, cohesive visual portfolio, and sustainable digital presence.</p>
+          </div>
+          <div class="audience-card">
+            <h3>Growing Businesses</h3>
+            <p>Upgrading scattered marketing and ad-hoc social posts into a disciplined, professional agency-level brand system.</p>
+          </div>
+          <div class="audience-card">
+            <h3>Established Companies</h3>
+            <p>Revitalizing dated digital assets, realigning customer perception, and modernizing multi-channel brand presence.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Before vs After Transformation -->
+      <div class="ba-grid reveal">
+        <div class="ba-card before">
+          <span class="eyebrow">Without a Strategy</span>
+          <h4>This is your brand without Vereor.</h4>
+          <p>Plain. Inconsistent messaging. Scattered social posts that get lost in the feed. Nothing distinctive for customers to remember or advocate for.</p>
+        </div>
+        <div class="ba-card after">
+          <span class="eyebrow">With Vereor Strategy</span>
+          <h4>This is your brand with Vereor.</h4>
+          <p>A crystal-clear position, an unmistakable editorial voice, cohesive visuals across every channel, and a reputation that compounds over time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       CLOSING CALL TO ACTION (PRESERVED & ELEVATED)
+       ========================================================================== -->
+    <section class="sec wrap contact-sec" id="contact" aria-labelledby="h-contact">
+      <div class="contact-card reveal">
+        <span class="eyebrow">START A PROJECT</span>
+        <h2 id="h-contact">Ready to give your brand a strategy?</h2>
+        <p class="sub">Let's build a brand people remember.</p>
+        
+        <div class="contact-actions">
+          <a class="btn light" href="mailto:contact.vereor@gmail.com?subject=Book%20a%20meeting%20with%20Vereor">Book a Meeting</a>
+          <button class="btn outline-light" id="copy" type="button">Copy email</button>
+          <span id="copied" role="status" aria-live="polite"></span>
+        </div>
+
+        <div class="contact-reach">
+          <div>
+            <small>Direct Email</small>
+            <span class="val" id="mail">contact.vereor@gmail.com</span>
+          </div>
+          <div>
+            <small>Instagram</small>
+            <a class="val" href="https://instagram.com/vereorco" target="_blank" rel="noopener noreferrer">@vereorco</a>
+          </div>
+          <div>
+            <small>Primary Market</small>
+            <span class="val">Bangalore, India &middot; Remote Worldwide</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       LARGE EDITORIAL FOOTER (RESTORED LOGO & STUDIO LOCATION)
+       ========================================================================== -->
+  <footer class="editorial-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Social -->
+        <div class="footer-col">
+          <a class="footer-brand" href="/" aria-label="Vereor, home">
+            <img src="logo.png" alt="Vereor logo" class="footer-logo-img" width="36" height="36">
+            <span class="brand-name" style="color: var(--cream);">vereor<span class="brand-dot">.</span></span>
+          </a>
+          <p>Strategy, identity, and content for brands that want to be remembered, not just seen.</p>
+          <div class="footer-socials">
+            <a class="footer-social-btn" href="https://instagram.com/vereorco" target="_blank" rel="noopener noreferrer" aria-label="Vereor on Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a class="footer-social-btn" href="https://www.linkedin.com/company/vereor" target="_blank" rel="noopener noreferrer" aria-label="Vereor on LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a class="footer-social-btn" href="mailto:contact.vereor@gmail.com" aria-label="Email Vereor directly">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Explore -->
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#what-we-do">01 What We Do</a></li>
+            <li><a href="#who-we-are">02 Who We Are</a></li>
+            <li><a href="#what-we-focus-on">03 What We Focus On</a></li>
+            <li><a href="#how-we-create">04 How We Create</a></li>
+            <li><a href="#how-we-work">05 How We Work</a></li>
+            <li><a href="#what-we-believe">06 What We Believe</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Legal & Studio -->
+        <div class="footer-col">
+          <h3>Legal &amp; Studio</h3>
+          <ul class="footer-links">
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+            <li><a href="/cookie-policy">Cookie Policy</a></li>
+            <li><a href="/refund-policy">Refund Policy</a></li>
+          </ul>
+          <div class="footer-contact-info" style="margin-top: 24px;">
+            <p><strong>Studio Location:</strong><br>Bangalore, Karnataka, India<br><em>Serving clients worldwide</em></p>
+            <p><strong>Direct Inquiries:</strong><br><a href="mailto:contact.vereor@gmail.com">contact.vereor@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Oversized Low-Contrast Brand Typography -->
+      <div class="footer-giant-wordmark" aria-hidden="true">vereor</div>
+
+      <!-- Bottom Copyright Row -->
+      <div class="footer-bottom">
+        <span class="brand" style="gap: 8px;">
+          <img src="logo.png" alt="Vereor logo" style="width: 20px; height: 20px; border-radius: 4px;">
+          <span style="font-family: var(--display); font-weight: 600; color: var(--cream);">vereor<span class="brand-dot">.</span></span>
+        </span>
+        <span>&copy; 2026 Vereor. All rights reserved.</span>
+        <a class="back-to-top" href="#top">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       INTERACTION SCRIPT & SCROLL SPY
+       ========================================================================== -->
+  <script>
+  (function() {
+    // Mobile Drawer Toggle
+    var menuToggle = document.getElementById('menuToggle');
+    var mobileDrawer = document.getElementById('mobileDrawer');
+    if (menuToggle && mobileDrawer) {
+      menuToggle.addEventListener('click', function() {
+        var isOpen = mobileDrawer.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', isOpen);
+      });
+      document.querySelectorAll('.drawer-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          mobileDrawer.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // Scroll Reveal Engine (Native IntersectionObserver)
+    var reveals = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.05, rootMargin: '0px 0px 40px 0px' });
+
+      reveals.forEach(function(el) {
+        revealObserver.observe(el);
+      });
+    } else {
+      reveals.forEach(function(el) { el.classList.add('in'); });
+    }
+
+    // Right-Side Vertical Navigation Scroll-Spy
+    var sectionIds = [
+      'what-we-do',
+      'who-we-are',
+      'what-we-focus-on',
+      'how-we-create',
+      'how-we-work',
+      'what-we-believe'
+    ];
+    var sideNavLinks = document.querySelectorAll('.side-nav-link');
+
+    function updateActiveNav() {
+      var scrollPos = window.scrollY + (window.innerHeight * 0.35);
+      var currentId = '';
+
+      for (var i = 0; i < sectionIds.length; i++) {
+        var el = document.getElementById(sectionIds[i]);
+        if (el) {
+          var top = el.offsetTop;
+          var height = el.offsetHeight;
+          if (scrollPos >= top && scrollPos < top + height) {
+            currentId = sectionIds[i];
+            break;
+          }
+        }
+      }
+
+      sideNavLinks.forEach(function(link) {
+        var targetSection = link.getAttribute('data-section');
+        if (targetSection === currentId) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    updateActiveNav();
+
+    // Smooth Scroll on Side Nav Clicks
+    sideNavLinks.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var targetId = link.getAttribute('data-section');
+        var targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          e.preventDefault();
+          targetEl.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // High-Precision Clipboard Email Copy
+    var copyBtn = document.getElementById('copy');
+    var copiedMsg = document.getElementById('copied');
+    var emailText = 'contact.vereor@gmail.com';
+
+    function showFeedback(text) {
+      if (!copiedMsg) return;
+      copiedMsg.textContent = text;
+      copiedMsg.style.opacity = '1';
+      setTimeout(function() {
+        copiedMsg.style.opacity = '0';
+        setTimeout(function() { copiedMsg.textContent = ''; }, 250);
+      }, 2500);
+    }
+
+    function execCopyFallback() {
+      var tempArea = document.createElement('textarea');
+      tempArea.value = emailText;
+      tempArea.style.position = 'fixed';
+      tempArea.style.left = '-9999px';
+      tempArea.style.top = '0';
+      document.body.appendChild(tempArea);
+      tempArea.focus();
+      tempArea.select();
+      try {
+        var success = document.execCommand('copy');
+        document.body.removeChild(tempArea);
+        if (success) {
+          showFeedback('Email copied to clipboard \u2713');
+          return;
+        }
+      } catch (e) {
+        try { document.body.removeChild(tempArea); } catch(err) {}
+      }
+
+      var mailEl = document.getElementById('mail');
+      if (!mailEl) return;
+      var range = document.createRange();
+      range.selectNodeContents(mailEl);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      showFeedback('Selected - press Ctrl+C to copy');
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(emailText)
+            .then(function() { showFeedback('Email copied to clipboard \u2713'); })
+            .catch(execCopyFallback);
+        } else {
+          execCopyFallback();
+        }
+      });
+    }
+  })();
+  </script>
+
+</body>
+</html>
