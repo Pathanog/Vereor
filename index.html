@@ -262,18 +262,45 @@
     .menu-toggle {
       display: none; background: none; border: none; padding: 10px;
       cursor: pointer; color: var(--ink);
+      z-index: 101;
     }
-    .menu-toggle svg { display: block; }
+    .menu-toggle svg { display: block; transition: transform 0.2s ease; }
+    .menu-toggle[aria-expanded="true"] svg { transform: rotate(90deg); }
     .mobile-drawer {
-      display: none; position: fixed; inset: 78px 0 0 0;
-      background: var(--cream); z-index: 95; padding: 36px var(--gut);
-      flex-direction: column; gap: 20px; overflow-y: auto;
+      display: none; position: fixed;
+      top: 78px; left: 0; right: 0; bottom: 0;
+      width: 100%; height: calc(100vh - 78px); height: calc(100dvh - 78px);
+      background: var(--cream); z-index: 99;
+      padding: clamp(20px, 4vw, 32px) var(--gut) 40px;
+      flex-direction: column; gap: 4px; overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
       border-top: 1px solid var(--line);
+      box-sizing: border-box;
     }
     .mobile-drawer.open { display: flex; }
-    .mobile-drawer a {
-      font-size: 20px; font-family: var(--display);
-      padding-block: 10px; border-bottom: 1px solid var(--line);
+    .mobile-drawer .drawer-link {
+      font-size: clamp(18px, 4.5vw, 22px);
+      font-family: var(--display);
+      font-weight: 500;
+      color: var(--ink);
+      padding-block: 12px;
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 1.3;
+      transition: color 0.2s ease, padding-left 0.2s ease;
+    }
+    .mobile-drawer .drawer-link:hover,
+    .mobile-drawer .drawer-link:active {
+      color: var(--blue);
+      padding-left: 4px;
+    }
+    .mobile-drawer .btn {
+      margin-top: 16px;
+      width: 100%;
+      text-align: center;
     }
 
     /* ==========================================================================
@@ -967,21 +994,49 @@
     }
     .contact-reach {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 24px; border-top: 1.5px solid rgba(255, 255, 255, 0.22);
-      padding-top: 30px; margin-top: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: clamp(16px, 2.5vw, 28px);
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+      padding-top: 24px;
+      margin-top: 6px;
     }
-    .contact-reach div { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+    .contact-reach div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
     .contact-reach small {
-      font-size: 12px; font-weight: 700; letter-spacing: 0.2em;
-      text-transform: uppercase; color: var(--yellow);
+      font-size: 11px; font-weight: 700; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--yellow); opacity: 0.95;
     }
     .contact-reach .val {
-      font-size: clamp(19px, 2.2vw, 28px);
-      font-weight: 600; overflow-wrap: anywhere; color: var(--cream);
+      font-size: clamp(14px, 1.25vw, 16.5px);
+      font-weight: 500; line-height: 1.5;
+      overflow-wrap: anywhere; color: var(--cream);
+      letter-spacing: 0.01em;
     }
     .contact-reach a.val {
-      text-decoration: underline; text-underline-offset: 6px;
+      text-decoration: underline; text-underline-offset: 4px;
+      transition: opacity 0.2s ease, color 0.2s ease;
+    }
+    .contact-reach a.val:hover {
+      opacity: 0.85; color: #fff;
+    }
+    .contact-dm-note {
+      font-size: clamp(14px, 1.25vw, 16px);
+      color: rgba(247, 243, 235, 0.88);
+      line-height: 1.5;
+      margin-top: -6px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      font-weight: 450;
+    }
+    .contact-dm-note a {
+      color: var(--yellow);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      transition: color 0.2s ease, opacity 0.2s ease;
+    }
+    .contact-dm-note a:hover {
+      color: #fff;
+      opacity: 0.9;
     }
 
     /* ==========================================================================
@@ -1200,25 +1255,25 @@
       </nav>
 
       <div style="display: flex; align-items: center; gap: 14px;">
-        <a class="btn" href="mailto:contact.vereor@gmail.com?subject=Contact%20Vereor">Contact Us</a>
+        <a class="btn" href="https://www.instagram.com/vereorco/" target="_blank" rel="noopener noreferrer">Contact Us</a>
         <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
       </div>
     </div>
-
-    <!-- Mobile Drawer -->
-    <div class="mobile-drawer" id="mobileDrawer">
-      <a href="#what-we-do" class="drawer-link">01 What We Do</a>
-      <a href="#who-we-are" class="drawer-link">02 Who We Are</a>
-      <a href="#what-we-focus-on" class="drawer-link">03 What We Focus On</a>
-      <a href="#how-we-create" class="drawer-link">04 How We Create</a>
-      <a href="#how-we-work" class="drawer-link">05 How We Work</a>
-      <a href="#what-we-believe" class="drawer-link">06 What We Believe</a>
-      <a href="#contact" class="drawer-link">Contact</a>
-      <a class="btn" style="margin-top: 14px;" href="mailto:contact.vereor@gmail.com?subject=Book%20a%20meeting%20with%20Vereor">Book a Meeting</a>
-    </div>
   </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#what-we-do" class="drawer-link">01 What We Do</a>
+    <a href="#who-we-are" class="drawer-link">02 Who We Are</a>
+    <a href="#what-we-focus-on" class="drawer-link">03 What We Focus On</a>
+    <a href="#how-we-create" class="drawer-link">04 How We Create</a>
+    <a href="#how-we-work" class="drawer-link">05 How We Work</a>
+    <a href="#what-we-believe" class="drawer-link">06 What We Believe</a>
+    <a href="#contact" class="drawer-link">Contact</a>
+    <a class="btn" style="margin-top: 14px;" href="https://www.instagram.com/vereorco/" target="_blank" rel="noopener noreferrer">Contact Us</a>
+  </div>
 
   <main id="content">
 
@@ -1232,7 +1287,7 @@
         <p class="hero-subhead">A full service marketing and brand management agency.</p>
         <p class="hero-lead">Vereor builds the strategy first, then everything people see on top of it, so brands, artists, and ambitious businesses are clear, distinct, and remembered.</p>
         <div class="hero-cta">
-          <a class="btn" href="mailto:contact.vereor@gmail.com?subject=Book%20a%20meeting%20with%20Vereor">Book a Meeting</a>
+          <a class="btn" href="https://www.instagram.com/vereorco/" target="_blank" rel="noopener noreferrer">Contact Us</a>
           <a class="btn ghost" href="#what-we-do">See what we do</a>
         </div>
       </div>
@@ -1669,7 +1724,7 @@
         <p class="sub">Let's build a brand people remember.</p>
         
         <div class="contact-actions">
-          <a class="btn light" href="mailto:contact.vereor@gmail.com?subject=Book%20a%20meeting%20with%20Vereor">Book a Meeting</a>
+          <a class="btn light" href="https://www.instagram.com/vereorco/" target="_blank" rel="noopener noreferrer">Contact Us</a>
           <button class="btn outline-light" id="copy" type="button">Copy email</button>
           <span id="copied" role="status" aria-live="polite"></span>
         </div>
@@ -1677,17 +1732,19 @@
         <div class="contact-reach">
           <div>
             <small>Direct Email</small>
-            <span class="val" id="mail">contact.vereor@gmail.com</span>
+            <a class="val" id="mail" href="mailto:contact.vereor@gmail.com">contact.vereor@gmail.com</a>
           </div>
           <div>
             <small>Instagram</small>
             <a class="val" href="https://instagram.com/vereorco" target="_blank" rel="noopener noreferrer">@vereorco</a>
           </div>
           <div>
-            <small>Primary Market</small>
+            <small>Location</small>
             <span class="val">Bangalore, India &middot; Remote Worldwide</span>
           </div>
         </div>
+
+        <p class="contact-dm-note">Prefer to chat directly? Text us on <a href="https://www.instagram.com/vereorco/" target="_blank" rel="noopener noreferrer">Instagram DM</a>.</p>
       </div>
     </section>
 
@@ -1777,14 +1834,25 @@
       menuToggle.addEventListener('click', function() {
         var isOpen = mobileDrawer.classList.toggle('open');
         menuToggle.setAttribute('aria-expanded', isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
       });
-      document.querySelectorAll('.drawer-link').forEach(function(link) {
+      document.querySelectorAll('.drawer-link, .mobile-drawer .btn').forEach(function(link) {
         link.addEventListener('click', function() {
           mobileDrawer.classList.remove('open');
           menuToggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
         });
       });
     }
+
+    // Direct Mailto Handler (Ensures default email client opens without opening a new window/tab)
+    document.querySelectorAll('a[href^="mailto:"]').forEach(function(mailLink) {
+      mailLink.removeAttribute('target');
+      mailLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = this.href;
+      });
+    });
 
     // Scroll Reveal Engine (Native IntersectionObserver)
     var reveals = document.querySelectorAll('.reveal');
